@@ -2,10 +2,13 @@
   <div
     :class="{
       'v-scroll-progression': true,
-      'v-scroll-progression--absolute': absolute,
-      'v-scroll-progression--bottom': bottom,
+      'v-scroll-progression--top': placement == 'top',
+      'v-scroll-progression--bottom': placement == 'bottom',
     }"
-    :style="{ height: convertToUnit(height), background: background }"
+    :style="{
+      height: convertToUnit(height),
+      background: background,
+    }"
   >
     <div
       class="v-scroll-progression__progress"
@@ -35,11 +38,10 @@ export default {
       type: [String, Number] as PropType<string | number>,
       default: "5px",
     },
-    absolute: {
-      type: Boolean as PropType<boolean>,
-    },
-    bottom: {
-      type: Boolean as PropType<boolean>,
+    placement: {
+      type: String as PropType<string>,
+      default: "top",
+      validator: (v) => ["bottom", "top"].includes(v),
     },
   },
 
@@ -79,18 +81,13 @@ export default {
   right: 0;
   z-index: 9999;
   width: 100%;
-}
-.v-scroll-progression.v-scroll-progression--absolute {
-  position: absolute;
-}
-.v-scroll-progression:not(.v-scroll-progression--absolute) {
   position: fixed;
 }
 .v-scroll-progression.v-scroll-progression--bottom {
   bottom: 0;
 }
-.v-scroll-progression:not(.v-scroll-progression--bottom) {
-  top: 0;
+.v-scroll-progression.v-scroll-progression--top {
+  bottom: 0;
 }
 
 .v-scroll-progression__progress {

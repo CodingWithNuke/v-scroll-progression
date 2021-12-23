@@ -1,6 +1,6 @@
 {
   "name": "v-scroll-progression",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Scroll progress indicator component for Vue 2.",
   "author": {
     "name": "CodingWithNuke",
