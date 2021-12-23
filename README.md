@@ -44,3 +44,6 @@ U can use the component in any of your components by using the `<v-scroll-progre
 | `background` | `String`           | `false`  | `#35495E`     |                 | Background color of the progress bar.  |
 | `height`     | `String`, `Number` | `false`  | `5px`         |                 | Height of the progress bar.            |
 | `placement`  | `String`           | `false`  | `top`         | `bottom`, `top` | Sets the placement of the progess bar. |
+
+## License
+The MIT License (MIT). Please see the [License File](LICENSE.md) for more information.

@@ -1,6 +1,6 @@
 {
   "name": "v-scroll-progression",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Scroll progress indicator component for Vue 2.",
   "author": {
     "name": "CodingWithNuke",
@@ -15,7 +15,10 @@
     "vue",
     "vue2",
     "progress",
-    "scroll"
+    "scroll",
+    "indicator",
+    "nuxt",
+    "nuxt2"
   ],
   "bugs": {
     "url": "https://github.com/CodingWithNuke/v-scroll-progression/issues"
