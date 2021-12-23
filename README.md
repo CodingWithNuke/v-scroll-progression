@@ -21,7 +21,7 @@ Vue.use(VScrollProgression);
 
 ### Nuxt 2
 
-Create a file caled `v-scroll-progression.client.js` in your `plugins/` folder. In there put the following:
+Create a file called `v-scroll-progression.client.js` in your `plugins/` folder. In there put the following:
 
 ```js
 import Vue from "vue";
