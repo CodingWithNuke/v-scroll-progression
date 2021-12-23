@@ -87,7 +87,7 @@ export default {
   bottom: 0;
 }
 .v-scroll-progression.v-scroll-progression--top {
-  bottom: 0;
+  top: 0;
 }
 
 .v-scroll-progression__progress {
